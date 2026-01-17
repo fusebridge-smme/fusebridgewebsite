@@ -80,7 +80,8 @@ export default function Footer() {
           <p className="text-center text-sm text-vanilla">
             &copy; {currentYear} Fuse Bridge. All rights reserved.
             <span className="md:inline-block md:ml-4 mt-2 md:mt-0 block text-orange">
-              Made with passion by Mvl prem
+              {/* Made with passion by Mvl prem */}
+              India
             </span>
           </p>
         </div>
