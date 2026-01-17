@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Facebook, Mail as GmailIcon } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Mail as GmailIcon, MessageCircle } from "lucide-react";
 
 // Instagram Icon
 const SimpleInstagramIcon = (props) => (
@@ -21,6 +21,7 @@ const contactInfo = {
   city: "Hyderabad, India",
   instagram: "fusebridge",
   Facebook: "fusebridge",
+  whatsapp: "+919640416345",
 };
 
 export default function Footer() {
@@ -88,6 +89,14 @@ export default function Footer() {
                 className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
               >
                 <GmailIcon className="w-8 h-8" />
+              </Link>
+              <Link
+                href={`https://wa.me/${contactInfo.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
+              >
+                <MessageCircle className="w-8 h-8" />
               </Link>
             </div>
           </div>
