@@ -15,19 +15,6 @@ const SimpleInstagramIcon = (props) => (
   </svg>
 );
 
-// Facebook Icon
-const SimpleFacebookIcon = (props) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className={props.className || "w-5 h-5"}
-  >
-    <path d="M22.675 0h-21.35C.597 0 0 .593 0 1.326v21.348C0 23.407.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.407 24 22.674V1.326C24 .593 23.403 0 22.675 0z" />
-  </svg>
-);
-
 const contactInfo = {
   email: "fusebridge@gmail.com",
   phone: "+91 9640416345",
@@ -78,14 +65,24 @@ export default function Footer() {
           {/* Column 3: Social Media */}
           <div className="col-span-1">
             <h3 className="text-2xl font-bold text-orange mb-4">Connect</h3>
-            <Link
-              href={`https://instagram.com/${contactInfo.instagram}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
-            >
-              <SimpleInstagramIcon className="w-8 h-8" />
-            </Link>
+            <div className="flex gap-4">
+              <Link
+                href={`https://instagram.com/${contactInfo.instagram}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
+              >
+                <SimpleInstagramIcon className="w-8 h-8" />
+              </Link>
+              <Link
+                href={`https://facebook.com/${contactInfo.Facebook}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
+              >
+                <Facebook className="w-8 h-8" />
+              </Link>
+            </div>
           </div>
         </div>
 
