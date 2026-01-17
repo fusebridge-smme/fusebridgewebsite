@@ -75,7 +75,8 @@ export default function Footer() {
                 <SimpleInstagramIcon className="w-8 h-8" />
               </Link>
               <Link
-                href={`https://facebook.com/${contactInfo.Facebook}`}
+                // href={`https://facebook.com/${contactInfo.Facebook}`}
+                href={`https://www.facebook.com/profile.php?id=61581848219007`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
