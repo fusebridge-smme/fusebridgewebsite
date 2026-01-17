@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "tailwindcss/theme";
+
+@theme {
+  --color-smoky-black: #0a0903;
+  --color-orange: #ff8200;
+  --color-vanilla: #ffeaae;
+}
+
+/* Nav link hover: underline + left‑to‑right color wipe (desktop only) */
+
+.nav-link-transition {
+  position: relative;
+  color: var(--color-vanilla);
+  padding-bottom: 0.5rem;
+  transition: color 0.5s;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+@media (min-width: 768px) {
+  .nav-link-transition {
+    text-decoration: none !important;
+    text-underline-offset: 0;
+  }
+
+  .nav-link-transition::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      var(--color-orange),
+      var(--color-orange)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: width 0.5s ease-out;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .nav-link-transition:hover::before {
+    width: 100%;
+  }
+
+  .nav-link-transition::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-orange);
+    transition: width 0.5s ease-out;
+  }
+
+  .nav-link-transition:hover::after {
+    width: 100%;
+  }
+}
+
+/* Button hover effect */
+
+.btn-slide-hover {
+  @apply transition-colors duration-300;
+  @apply px-8 py-3 bg-vanilla text-smoky-black text-lg font-bold rounded-lg;
+}
+
+.btn-slide-hover-effect {
+  @apply absolute inset-0 bg-orange transform scale-x-0 origin-left transition-transform duration-600 ease-in-out group-hover:scale-x-100 rounded-lg;
+}
+
+.btn-slide-hover-text {
+  @apply relative z-10 transition-colors duration-300 group-hover:text-white;
+}
+
+/* Scroll Animation */
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-scroll-animation {
+  animation: scroll-left 20s linear infinite;
+}
