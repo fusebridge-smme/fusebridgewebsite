@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Mail as GmailIcon } from "lucide-react";
 
 // Instagram Icon
 const SimpleInstagramIcon = (props) => (
@@ -82,6 +82,12 @@ export default function Footer() {
                 className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
               >
                 <Facebook className="w-8 h-8" />
+              </Link>
+              <Link
+                href={`mailto:${contactInfo.email}`}
+                className="inline-flex items-center justify-center text-vanilla hover:text-orange hover:border-orange transition duration-200"
+              >
+                <GmailIcon className="w-8 h-8" />
               </Link>
             </div>
           </div>
