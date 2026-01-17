@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 
 // Instagram Icon
 const SimpleInstagramIcon = (props) => (
@@ -20,6 +20,7 @@ const contactInfo = {
   phone: "+91 9640416345",
   city: "Hyderabad, India",
   instagram: "fusebridge",
+  Facebook: "fusebridge",
 };
 
 export default function Footer() {
