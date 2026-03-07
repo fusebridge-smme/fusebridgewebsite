@@ -102,7 +102,31 @@ export default function Team() {
   </div>
 </div>
 
+        {/* anita */}
+<div className="container mx-auto px-4 mt-20 text-center">
 
+  <div className="flex justify-center mb-6">
+    <div className="relative w-48 h-48">
+      <Image
+        src="team/anita.svg"
+        alt="Creative Designer"
+        fill
+        className="object-contain rounded-xl"
+      />
+    </div>
+  </div>
+
+  <p className="text-2xl font-bold tracking-wider text-orange mb-3">
+    Anita Sharma
+  </p>
+
+  <p className="text-lg leading-relaxed text-white max-w-2xl mx-auto">
+    Anita leads the creative design efforts at Fuse Bridge. She focuses on
+    branding, visual storytelling, and digital assets that help businesses
+    create a powerful and consistent identity across platforms.
+  </p>
+
+</div>
 
       {/* Vishnu */}
       <div className="container mx-auto px-4">
