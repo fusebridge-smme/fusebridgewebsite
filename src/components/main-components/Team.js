@@ -70,7 +70,7 @@ export default function Team() {
       </div> */}
 
       {/* Vishnu */}
-      {/* <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-2/3 pt-4 lg:order-2">
             <p className="text-2xl font-bold tracking-wider text-orange mb-2">
@@ -99,7 +99,7 @@ export default function Team() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }
