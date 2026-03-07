@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
+  
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,6 +27,7 @@ export default function Header() {
             height={30}
           />
         </Link>
+
 
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
