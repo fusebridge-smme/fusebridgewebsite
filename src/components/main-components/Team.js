@@ -39,7 +39,7 @@ export default function Team() {
       </div>
 
       {/* Mvlprem */}
-      {/* <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row lg:space-x-12 items-center">
           <div className="order-2 lg:order-1 w-full lg:w-1/3 flex justify-center items-center mb-8 lg:mb-0">
             <div className="relative w-full max-w-xs h-64 flex items-center justify-center">
@@ -67,7 +67,7 @@ export default function Team() {
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Vishnu */}
       <div className="container mx-auto px-4">
