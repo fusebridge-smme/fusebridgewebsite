@@ -69,6 +69,41 @@ export default function Team() {
         </div>
       </div> */}
 
+        {/* Sai  */}
+<div className="container mx-auto px-4 mt-16">
+  <div className="flex flex-col lg:flex-row lg:space-x-12 items-center">
+    
+    <div className="order-2 lg:order-1 w-full lg:w-1/3 flex justify-center items-center mb-8 lg:mb-0">
+      <div className="relative w-full max-w-xs h-64 flex items-center justify-center">
+        <Image
+          src="team/sai.svg"
+          alt="Digital marketing professional"
+          fill
+          className="object-contain"
+          priority={false}
+        />
+      </div>
+    </div>
+
+    <div className="w-full lg:w-2/3 pt-4 order-1 lg:order-2">
+      <p className="text-2xl font-bold tracking-wider text-orange mb-2">
+        Sai
+      </p>
+
+      <p className="text-lg leading-relaxed text-white mb-8 max-w-2xl">
+        Sai plays a key role at Fuse Bridge, contributing to
+        digital strategy and execution. With expertise in marketing tools,
+        analytics, and creative solutions, they help deliver impactful
+        digital experiences for our clients and support the growth of
+        innovative brands.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
       {/* Vishnu */}
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
