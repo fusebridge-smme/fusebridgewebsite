@@ -101,31 +101,35 @@ export default function Team() {
 
   </div>
 </div>
+        {/* Anita Sharma */}
+<div className="container mx-auto px-4">
+  <div className="flex flex-col lg:flex-row lg:space-x-12 items-center">
+    <div className="order-2 lg:order-1 w-full lg:w-1/3 flex justify-center items-center mb-8 lg:mb-0">
+      <div className="relative w-full max-w-xs h-64 flex items-center justify-center">
+        <Image
+          src="team/anita.svg"
+          alt="Creative designer working on digital branding"
+          fill
+          className="object-contain"
+          priority={false}
+        />
+      </div>
+    </div>
 
-        {/* anita */}
-<div className="container mx-auto px-4 mt-20 text-center">
+    <div className="w-full lg:w-2/3 pt-4 order-1 lg:order-2">
+      <p className="text-2xl font-bold tracking-wider text-orange mb-2">
+        Anita Sharma
+      </p>
 
-  <div className="flex justify-center mb-6">
-    <div className="relative w-48 h-48">
-      <Image
-        src="team/anita.svg"
-        alt="Creative Designer"
-        fill
-        className="object-contain rounded-xl"
-      />
+      <p className="text-lg leading-relaxed text-white mb-8 max-w-2xl">
+        Anita leads the creative design and branding initiatives at Fuse Bridge.
+        She specializes in creating visually engaging digital assets including
+        brand identities, marketing creatives, and social media content. Her
+        focus is on delivering impactful designs that strengthen brand presence
+        and enhance the overall digital experience for our clients.
+      </p>
     </div>
   </div>
-
-  <p className="text-2xl font-bold tracking-wider text-orange mb-3">
-    Anita Sharma
-  </p>
-
-  <p className="text-lg leading-relaxed text-white max-w-2xl mx-auto">
-    Anita leads the creative design efforts at Fuse Bridge. She focuses on
-    branding, visual storytelling, and digital assets that help businesses
-    create a powerful and consistent identity across platforms.
-  </p>
-
 </div>
 
       {/* Vishnu */}
