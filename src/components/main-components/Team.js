@@ -76,7 +76,7 @@ export default function Team() {
     <div className="order-2 lg:order-1 w-full lg:w-1/3 flex justify-center items-center mb-8 lg:mb-0">
       <div className="relative w-full max-w-xs h-64 flex items-center justify-center">
         <Image
-          src="team/sai.svg"
+          src="team/saibg.svg"
           alt="Digital marketing professional"
           fill
           className="object-contain"
