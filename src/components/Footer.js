@@ -34,7 +34,8 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div className="col-span-1">
             <Image
-              src="illustrations/logo-text.svg"
+              src="illustrations/logo_square1.svg"
+//              src="illustrations/logo-text.svg"
               alt="Fuse Bridge Logo"
               width={150}
               height={350}
