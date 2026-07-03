@@ -58,12 +58,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
      <head>
-        <Script
-          src="https://quge5.com/88/tag.min.js"
-          strategy="afterInteractive"
-          data-zone="255849"
-          data-cfasync="false"
-        />
+        // <Script
+        //   src="https://quge5.com/88/tag.min.js"
+        //   strategy="afterInteractive"
+        //   data-zone="255849"
+        //   data-cfasync="false"
+        // />
+    <Script id="al5sm-tag" strategy="afterInteractive">
+          {`(function(s){
+            s.dataset.zone='11233331';
+            s.src='https://al5sm.com/tag.min.js'
+          })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));`}
+        </Script>
       </head>
       <body
         className={`${arimo.className} min-h-screen bg-smoky-black text-vanilla flex flex-col`}
