@@ -21,6 +21,7 @@ export const metadata = {
   other: {
     monetag: 'c3cbc2c65a791e6fbb09ab89fe9fc743',
   },
+  
   icons: [
     {
       url: "fav/favicon.svg",
@@ -55,6 +56,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     <head>
+        <Script
+          src="https://quge5.com/88/tag.min.js"
+          strategy="afterInteractive"
+          data-zone="255849"
+          data-cfasync="false"
+        />
+      </head>
       <body
         className={`${arimo.className} min-h-screen bg-smoky-black text-vanilla flex flex-col`}
       >
