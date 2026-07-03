@@ -64,13 +64,14 @@ export default function RootLayout({ children }) {
         //   data-zone="255849"
         //   data-cfasync="false"
         // />
-    <Script id="al5sm-tag" strategy="afterInteractive">
+         <Script id="al5sm-inline" strategy="afterInteractive">
           {`(function(s){
-            s.dataset.zone='11233331';
-            s.src='https://al5sm.com/tag.min.js'
-          })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));`}
+  s.dataset.zone='11233331';
+  s.src='https://al5sm.com/tag.min.js';
+})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));`}
         </Script>
-      </head>
+          
+          </head>
       <body
         className={`${arimo.className} min-h-screen bg-smoky-black text-vanilla flex flex-col`}
       >
