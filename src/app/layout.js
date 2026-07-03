@@ -17,6 +17,9 @@ export const metadata = {
     "Fuse Bridge is the digital marketing agency that turns your vision into reality. Get measurable growth with Design, expert SEO and data-driven strategies. Start your project now!",
   alternates: {
     canonical: "https://www.fusebridge.in",
+      }, 
+  other: {
+    monetag: 'c3cbc2c65a791e6fbb09ab89fe9fc743',
   },
   icons: [
     {
