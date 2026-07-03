@@ -64,12 +64,16 @@ export default function RootLayout({ children }) {
         //   data-zone="255849"
         //   data-cfasync="false"
         // />
-         <Script id="al5sm-inline" strategy="afterInteractive">
-          {`(function(s){
+         <Script
+          id="al5sm-inline"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){
   s.dataset.zone='11233331';
   s.src='https://al5sm.com/tag.min.js';
-})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));`}
-        </Script>
+})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));`,
+          }}
+        />
           
           </head>
       <body
