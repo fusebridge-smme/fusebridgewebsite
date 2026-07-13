@@ -160,9 +160,7 @@
 
 
 
-Here’s your `RootLayout` with the script removed (and `next/script` import deleted):
 
-```js
 import "./globals.css";
 
 import Header from "@/components/Header";
